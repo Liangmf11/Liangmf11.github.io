@@ -16,11 +16,15 @@ I am currently a Pre-Phd student at [CISPA Helmholtz Center for Information Secu
 
 Research Interests
 ======
-I'm intested in Trustworthy AI, Privacy, and Security with a focus on LLM. I'm also interested in agent-based AI systems and AI for Science.
+- Trustworthy LLMs
+- LLM Safety
+- LLM Agents
+
+**I'm always excited to discuss new ideas and explore potential collaboration opportunities. Feel free to reach out if you'd like to chat about research or any other topics.**
 
 What's New
 ======
-- [5/2025] I'll start my PhD journey at [CISPA Helmholtz Center for Information Security](https://cispa.de).
+- [5/2025] I started my PhD journey at [CISPA Helmholtz Center for Information Security](https://cispa.de).
 
 
 <!-- Education
