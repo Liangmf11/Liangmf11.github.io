@@ -5,41 +5,77 @@ author_profile: true
 ---
 
 <style type="text/css" rel="stylesheet">
+.pub-entry {
+margin: 0 0 1.4rem 0;
+}
+
+.pub-title {
+margin: 0 0 0.25rem 0;
+}
+
+.pub-title-text {
+color: rgb(39, 117, 182);
+}
+
+.pub-meta {
+margin: 0;
+font-size: 0.95em;
+line-height: 1.35;
+}
+
+.pub-links {
+display: flex;
+align-items: center;
+gap: 0.3rem;
+margin: -0.05rem 0 0 0;
+line-height: 1;
+}
+
+.pub-link {
+display: inline-block;
+padding: 0.05rem 0.35rem;
+border-radius: 4px;
+color: white;
+text-decoration: none;
+line-height: 1.15;
+font-size: 0.9rem;
+}
+
+.pub-link:hover {
+text-decoration: none;
+opacity: 0.9;
+}
+
 .btn--paper {
-color: white;
 background-color: lightseagreen;
-padding: 1px 3px;
-text-align: center;
-border-radius: 4px;
-a { TEXT-DECORATION:none }
 }
+
 .btn--arxiv {
-color: white;
 background-color: tan;
-padding: 1px 3px;
-text-align: center;
-border-radius: 4px;
-a { TEXT-DECORATION:none }
 }
+
 .btn--code {
-color: white;
-background-color: DARKORANGE;
-padding: 1px 3px;
-text-align: center;
-border-radius: 4px;
-a { TEXT-DECORATION:none }
+background-color: darkorange;
 }
 </style>
 
-<h2 id='224'>2024</h2>
+{% for year_group in site.data.publications %}
+<h2 id="{{ year_group.year }}">{{ year_group.year }}</h2>
 
-### <span style="color:rgb(39, 117, 182)">THaMES: An End-to-End Tool for Hallucination Mitigation and Evaluation in Large Language Models</span>
-<font size="3"><b>Mengfei Liang</b>, Archish Arun, Zekun Wu, Cristian Munoz, Jonathan Lutch, Emre Kazim, Adriano Koshiyama, Philip Treleaven<br>
-<i>NeurIPS 2024 SoLaR</i></font><br>
-<a href="https://arxiv.org/abs/2409.11353" class="btn--paper" target="_blank">Paper</a>
-<a href="https://github.com/holistic-ai/THaMES" class="btn--code" target="_blank">code</a>
-
-### <span style="color:rgb(39, 117, 182)">FastCellpose: a fast and accurate deep-learning framework for segmentation of all glomeruli in mouse whole-kidney microscopic optical images</span>
-Yutong Han, Zhan Zhang, Yafeng Li, Guoqing Fan, <font size="3"><b>Mengfei Liang</b>, Zhijie Liu, Shuo Nie, Kefu Ning, Qingming Luo, Jing Yuan<br>
-<i>Cells</i></font><br>
-<a href="https://www.mdpi.com/2073-4409/12/23/2753" class="btn--paper" target="_blank">Paper</a>
+{% for publication in year_group.entries %}
+<div class="pub-entry">
+  <h3 class="pub-title">
+    <span class="pub-title-text">{{ publication.title }}</span>
+  </h3>
+  <p class="pub-meta">
+    {{ publication.authors }}<br>
+    <i>{{ publication.venue }}</i>
+  </p>
+  <div class="pub-links">
+    {% for link in publication.links %}
+    <a href="{{ link.url }}" class="pub-link {{ link.class }}" target="_blank">{{ link.label }}</a>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}
+{% endfor %}

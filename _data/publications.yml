@@ -1,0 +1,30 @@
+- year: 2025
+  entries:
+    - title: "From Evidence to Verdict: An Agent-Based Forensic Framework for AI-Generated Image Detection"
+      authors: "<b>Mengfei Liang</b>, Yiting Qu, Yukun Jiang, Michael Backes, Yang Zhang"
+      venue: "arXiv preprint"
+      links:
+        - label: "Paper"
+          url: "https://arxiv.org/abs/2511.00181"
+          class: "btn--paper"
+
+- year: 2024
+  entries:
+    - title: "THaMES: An End-to-End Tool for Hallucination Mitigation and Evaluation in Large Language Models"
+      authors: "<b>Mengfei Liang</b>, Archish Arun, Zekun Wu, Cristian Munoz, Jonathan Lutch, Emre Kazim, Adriano Koshiyama, Philip Treleaven"
+      venue: "NeurIPS 2024 SoLaR"
+      links:
+        - label: "Paper"
+          url: "https://arxiv.org/abs/2409.11353"
+          class: "btn--paper"
+        - label: "Code"
+          url: "https://github.com/holistic-ai/THaMES"
+          class: "btn--code"
+
+    - title: "FastCellpose: a fast and accurate deep-learning framework for segmentation of all glomeruli in mouse whole-kidney microscopic optical images"
+      authors: "Yutong Han, Zhan Zhang, Yafeng Li, Guoqing Fan, <b>Mengfei Liang</b>, Zhijie Liu, Shuo Nie, Kefu Ning, Qingming Luo, Jing Yuan"
+      venue: "Cells"
+      links:
+        - label: "Paper"
+          url: "https://www.mdpi.com/2073-4409/12/23/2753"
+          class: "btn--paper"
