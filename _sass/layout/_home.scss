@@ -41,8 +41,9 @@
 }
 
 /* Hero CTA buttons (standalone class: the theme's .btn uses !important
-   on color/border, which would override custom pill styling) */
-.hero-btn {
+   on color/border, which would override custom pill styling).
+   Scoped to .home-hero to beat the theme's `.page__content a` underline. */
+.home-hero .hero-btn {
   display: inline-block;
   margin: 0.25em 0.2em;
   padding: 0.5em 1.15em;
@@ -57,6 +58,7 @@
   &:hover {
     border-color: var(--global-link-color);
     color: var(--global-link-color-hover);
+    text-decoration: none;
   }
 }
 

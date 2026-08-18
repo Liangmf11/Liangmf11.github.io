@@ -79,7 +79,8 @@ html[data-theme="dark"] .pub-entry {
 }
 
 /* --- Action links ------------------------------------------------------- */
-.pub-link {
+/* Scoped to .pub-entry to beat the theme's `.page__content a` underline. */
+.pub-entry .pub-link {
   display: inline-block;
   padding: 0.14rem 0.65rem;
   border-radius: 999px;
