@@ -9,14 +9,14 @@ redirect_from:
 
 ## Reviewing
 
-<div class="card-block">
+<div class="card-block reveal">
   <h3>Conferences</h3>
   <ul>
     <li><strong>2024</strong>: SoLaR (NeurIPS Workshop)</li>
   </ul>
 </div>
 
-<div class="card-block">
+<div class="card-block reveal">
   <h3>Journals</h3>
   <ul>
     <li><strong>IEEE TDSC</strong> (IEEE Transactions on Dependable and Secure Computing)</li>

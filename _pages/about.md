@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<div class="home-hero">
+<div class="home-hero reveal">
   <h1 class="home-hero__name">Mengfei Liang <span class="home-hero__cn">梁萌飞</span></h1>
   <p class="home-hero__lead">Ph.D. student at CISPA Helmholtz Center for Information Security, working on trustworthy LLMs, LLM safety, and LLM agents.</p>
   <p class="home-hero__cta">
@@ -25,7 +25,7 @@ I am currently a Ph.D. student at [CISPA Helmholtz Center for Information Securi
 
 ## Research Interests
 
-<div class="research-tags">
+<div class="research-tags reveal">
   <span class="tag">Trustworthy LLMs</span>
   <span class="tag">LLM Safety</span>
   <span class="tag">LLM Agents</span>
@@ -35,7 +35,7 @@ I am currently a Ph.D. student at [CISPA Helmholtz Center for Information Securi
 
 ## Education
 
-<div class="timeline">
+<div class="timeline reveal">
   <div class="timeline__item">
     <span class="timeline__date">2025 – Present</span>
     <span class="timeline__role">Ph.D. in Computer Science</span>
@@ -55,7 +55,7 @@ I am currently a Ph.D. student at [CISPA Helmholtz Center for Information Securi
 
 ## What's New
 
-<div class="timeline news">
+<div class="timeline news reveal">
 {% for item in site.data.news %}
   <div class="timeline__item">
     <span class="timeline__date">{{ item.date }}</span>

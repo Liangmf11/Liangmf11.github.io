@@ -181,13 +181,39 @@ html[data-theme="dark"] {
   border: 1px solid var(--global-border-color);
   border-radius: 12px;
   background: var(--global-code-background-color);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 
   h3 {
     margin-top: 0;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   }
 }
 
 html[data-theme="dark"] .card-block {
   background: #535353;
   border-color: #6a6a6a;
+
+  &:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* ==========================================================================
+   SCROLL REVEAL
+   Elements with .reveal fade/slide in when scrolled into view.
+   Hidden only when JS is available (html.js added by custom.js).
+   ========================================================================== */
+html.js .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
 }

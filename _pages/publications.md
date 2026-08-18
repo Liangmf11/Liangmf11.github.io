@@ -5,10 +5,10 @@ author_profile: true
 ---
 
 {% for year_group in site.data.publications %}
-<h2 class="pub-year" id="{{ year_group.year }}">{{ year_group.year }}</h2>
+<h2 class="pub-year reveal" id="{{ year_group.year }}">{{ year_group.year }}</h2>
 
 {% for publication in year_group.entries %}
-<div class="pub-entry">
+<div class="pub-entry reveal">
   <h3 class="pub-title">
     <span class="pub-title-text">{{ publication.title }}</span>
   </h3>
