@@ -11,6 +11,15 @@
 
 .pub-entry {
   margin: 0 0 1.4rem 0;
+  padding: 1.1em 1.3em;
+  border: 1px solid var(--global-border-color);
+  border-radius: 12px;
+  background: var(--global-code-background-color);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    border-color: var(--global-link-color);
+  }
 
   .pub-title {
     margin: 0 0 0.25rem 0;
@@ -42,6 +51,15 @@
     align-items: center;
     gap: 0.4rem;
     margin: 0.35rem 0 0;
+  }
+}
+
+html[data-theme="dark"] .pub-entry {
+  background: #535353;
+  border-color: #6a6a6a;
+
+  &:hover {
+    border-color: #facc15;
   }
 }
 
@@ -79,7 +97,7 @@
 }
 
 .btn--paper {
-  background-color: #2f7f93; /* theme accent */
+  background-color: #a16207; /* amber-700: white text stays readable */
 }
 
 .btn--arxiv {

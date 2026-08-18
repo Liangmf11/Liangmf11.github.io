@@ -134,37 +134,58 @@
 html[data-theme="dark"] {
   .home-hero {
     background-color: #535353; /* slightly raised above page bg #474747 */
-    background-image: linear-gradient(135deg, rgba(14, 161, 197, 0.12), transparent 60%);
+    background-image: linear-gradient(135deg, rgba(250, 204, 21, 0.14), transparent 60%);
     border-color: #6a6a6a;
   }
 
   .hero-btn {
     background-color: #5e5e5e;
     border-color: #767676;
-    color: #0ea1c5;
+    color: #facc15;
 
     &:hover {
-      border-color: #0ea1c5;
-      color: #53c1dd;
+      border-color: #facc15;
+      color: #fde047;
     }
   }
 
   .research-tags .tag {
     background-color: #5e5e5e;
     border-color: #767676;
-    color: #0ea1c5;
+    color: #facc15;
   }
 
   .timeline {
     border-left-color: #6a6a6a;
 
     .timeline__item::before {
-      background: #0ea1c5;
+      background: #facc15;
     }
 
     .timeline__date {
-      background-color: rgba(14, 161, 197, 0.16);
-      color: #0ea1c5;
+      background-color: rgba(250, 204, 21, 0.18);
+      color: #facc15;
     }
   }
+}
+
+/* ==========================================================================
+   GENERIC CARD BLOCK
+   Used for Services and other structured content sections
+   ========================================================================== */
+.card-block {
+  padding: 1.1em 1.4em;
+  margin: 0 0 1.2em;
+  border: 1px solid var(--global-border-color);
+  border-radius: 12px;
+  background: var(--global-code-background-color);
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+html[data-theme="dark"] .card-block {
+  background: #535353;
+  border-color: #6a6a6a;
 }

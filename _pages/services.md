@@ -9,10 +9,16 @@ redirect_from:
 
 ## Reviewing
 
-### Conferences
+<div class="card-block">
+  <h3>Conferences</h3>
+  <ul>
+    <li><strong>2024</strong>: SoLaR (NeurIPS Workshop)</li>
+  </ul>
+</div>
 
-- **2024**: SoLaR (NeurIPS Workshop)
-
-### Journals
-
-- **IEEE TDSC** (IEEE Transactions on Dependable and Secure Computing)
+<div class="card-block">
+  <h3>Journals</h3>
+  <ul>
+    <li><strong>IEEE TDSC</strong> (IEEE Transactions on Dependable and Secure Computing)</li>
+  </ul>
+</div>

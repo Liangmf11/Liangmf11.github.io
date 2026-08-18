@@ -43,12 +43,12 @@ I am currently a Ph.D. student at [CISPA Helmholtz Center for Information Securi
   </div>
   <div class="timeline__item">
     <span class="timeline__date">2023 – 2024</span>
-    <span class="timeline__role">M.Sc.</span>
+    <span class="timeline__role">M.Sc. in Computational Statistics and Machine Learning</span>
     <span class="timeline__where">University College London · Advisor: Prof. Philip Treleaven</span>
   </div>
   <div class="timeline__item">
     <span class="timeline__date">2019 – 2023</span>
-    <span class="timeline__role">B.Sc.</span>
+    <span class="timeline__role">Honours B.Sc. in Mathematics &amp; Computer Science</span>
     <span class="timeline__where">McMaster University</span>
   </div>
 </div>
