@@ -1,0 +1,95 @@
+/* ==========================================================================
+   PUBLICATIONS PAGE
+   Entry cards, author highlight, action links
+   ========================================================================== */
+
+.pub-year {
+  margin: 1.4em 0 0.6em;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid var(--global-border-color);
+}
+
+.pub-entry {
+  margin: 0 0 1.4rem 0;
+
+  .pub-title {
+    margin: 0 0 0.25rem 0;
+
+    .pub-title-text {
+      color: var(--global-link-color);
+    }
+
+    .pub-star {
+      color: #f0ad4e;
+      margin-right: 0.3em;
+    }
+  }
+
+  .pub-meta {
+    margin: 0;
+    font-size: 0.95em;
+    line-height: 1.35;
+  }
+
+  .pub-author-me {
+    font-weight: bold;
+    color: var(--global-link-color);
+  }
+
+  .pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0.35rem 0 0;
+  }
+}
+
+/* Featured cards (homepage) */
+.featured-pubs {
+  .pub-entry {
+    padding: 1.1em 1.3em;
+    border: 1px solid var(--global-border-color);
+    border-radius: 12px;
+    background: var(--global-code-background-color);
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-color: var(--global-link-color);
+    }
+  }
+}
+
+/* --- Action links ------------------------------------------------------- */
+.pub-link {
+  display: inline-block;
+  padding: 0.14rem 0.65rem;
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.4;
+  font-size: 0.82rem;
+  border: 0;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.88;
+  }
+}
+
+.btn--paper {
+  background-color: #2f7f93; /* theme accent */
+}
+
+.btn--arxiv {
+  background-color: #b31b1b;
+}
+
+.btn--code {
+  background-color: #1f883d;
+}
+
+.btn--slides {
+  background-color: #8b5cf6;
+}

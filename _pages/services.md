@@ -7,14 +7,12 @@ redirect_from:
   - /services.html
 ---
 
-Reviewer
-======
+## Reviewing
 
-Conferences:
-------
+### Conferences
 
-**2024**: SoLaR (NeurIPS Workshop)
+- **2024**: SoLaR (NeurIPS Workshop)
 
-Journals:
-------
-TDSC
+### Journals
+
+- **IEEE TDSC** (IEEE Transactions on Dependable and Secure Computing)
