@@ -177,7 +177,8 @@
   min-width: 250px;
   background: var(--global-bg-color);
 
-  a {
+  a,
+  #theme-toggle {
     display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
@@ -189,17 +190,20 @@
     }
   }
 
-  button {
+  .nav-toggle {
     position: absolute;
     height: 2.5rem;
     right: 0;
     padding: 0 0.5rem;
     border: 0;
-    outline: none;
     background-color: var(--global-base-color);
     color: #fff;
     cursor: pointer;
     z-index: 100;
+
+    .navicon {
+      display: block;
+    }
   }
 
   .visible-links {
@@ -219,22 +223,21 @@
       }
 
       &:last-child {
-        a {
+        a, #theme-toggle {
           margin-right: 0;
         }
       }
     }
 
     #theme-toggle {
-      a {
-        width: 25px;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
-      }
+      width: 25px;
+      border: 0;
+      background: transparent;
+      font: inherit;
     }
 
-    a {
+    a,
+    #theme-toggle {
       position: relative;
 
       &:before {

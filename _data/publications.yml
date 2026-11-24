@@ -31,6 +31,8 @@
           url: "https://github.com/holistic-ai/THaMES"
           class: "btn--code"
 
+- year: 2023
+  entries:
     - title: "FastCellpose: a fast and accurate deep-learning framework for segmentation of all glomeruli in mouse whole-kidney microscopic optical images"
       authors: "Yutong Han, Zhan Zhang, Yafeng Li, Guoqing Fan, <b>Mengfei Liang</b>, Zhijie Liu, Shuo Nie, Kefu Ning, Qingming Luo, Jing Yuan"
       venue: "Cells"

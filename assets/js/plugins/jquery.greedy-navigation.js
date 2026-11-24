@@ -6,7 +6,7 @@
 */
 
 var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
+var $btn = $('#site-nav .nav-toggle');
 var $vlinks = $('#site-nav .visible-links');
 var $vlinks_persist_tail = $vlinks.children("*.persist.tail");
 var $hlinks = $('#site-nav .hidden-links');
@@ -50,7 +50,7 @@ function updateNav() {
     // Hide the dropdown btn if hidden list is empty
     if (breaks.length < 1) {
       $btn.addClass('hidden');
-      $btn.removeClass('close');
+      $btn.removeClass('close').attr('aria-expanded', 'false');
       $hlinks.addClass('hidden');
     }
   }
@@ -74,13 +74,13 @@ function updateNav() {
 $(window).on('resize', function () {
   updateNav();
 });
-screen.orientation.addEventListener("change", function () {
-  updateNav();
-});
+if (screen.orientation && screen.orientation.addEventListener) {
+  screen.orientation.addEventListener("change", updateNav);
+}
 
 $btn.on('click', function () {
   $hlinks.toggleClass('hidden');
-  $(this).toggleClass('close');
+  $(this).toggleClass('close').attr('aria-expanded', $hlinks.hasClass('hidden') ? 'false' : 'true');
 });
 
 updateNav();
